@@ -1,0 +1,3 @@
+
+bank.popleft()
+print(bank)

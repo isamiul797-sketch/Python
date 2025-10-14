@@ -1,0 +1,144 @@
+*{
+    background: lightcyan;
+padding: 0;
+margin: 0;
+text-decoration: none;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.Home{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 50px 80px;
+    z-index: 99;
+    opacity: 0;
+    animation: to_bottom ease forwards 1s;
+
+}
+
+header nav a{
+    font-size: 24px;
+    color: black;
+    position: relative;
+    margin-left: 70px;
+}
+
+header nav a::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 2.5px;
+    transform: scaleX(0);
+    transition: .3s;
+    transform-origin: left;
+
+}
+header nav a:hover::before{
+    transform: scaleX(1);
+}
+.text-box{
+    width: 50%;
+    color: black;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+.text-box h1{
+    
+    font-size: 60px;
+    animation:to_right ease forwards 1s;
+}
+.text-box h1:nth-child(2){
+    animation-delay: to_right ease forward 1s;
+}
+.text-box h1 span{
+    color: #d764e9;
+}
+.text-box p{
+    margin: 35px 0;
+    font-size: 20px;
+    width: 70%;
+    color: #6b6b6b;
+    animation: to_right ease forwards 1s;
+}
+.btn{
+    position: relative;
+    color: pink;
+    padding: 12px 30px;
+    border: 2px solid #d764e9;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: .3s;
+    overflow: hidden;
+    animation: to_right ease forwards 1s;
+
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d764e9;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .3s;
+}
+.btn:hover::before{
+    transform: scaleX(1);
+}
+.btn:hover{
+    color: black;
+}
+
+.img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+@keyframes to_bottom{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes to_right{
+    0%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
