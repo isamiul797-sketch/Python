@@ -1,0 +1,9 @@
+h1,p,span{
+    background-color: teal;
+}
+h1{
+    display: inline-block;
+}
+span{
+    display: block;
+}

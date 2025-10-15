@@ -1,0 +1,22 @@
+table,
+th,
+td{
+
+    border: 1px solid tomato;
+    border-collapse: collapse ;
+    padding: 5px;
+
+}
+table{
+    width: 100%;
+}
+th{
+    background: red;
+    color: aliceblue;
+    height: 50px;
+    text-align: center;
+}
+td{
+    background: yellow;
+    color:black;
+}

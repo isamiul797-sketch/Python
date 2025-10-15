@@ -1,0 +1,8 @@
+div{
+    background-color: lightblue;
+    color: black;
+    padding: 20px 5%;
+    overflow: auto;
+    width: 90%;
+    height: 100px;
+}
