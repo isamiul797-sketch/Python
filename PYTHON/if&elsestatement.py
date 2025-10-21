@@ -64,3 +64,10 @@ if num1 > num2:
         print(num3)
 else :
     print(num2)
+
+#ternary
+
+num1 = 8
+num2 = 42
+
+print(num1 if num1 > num2 else num2)
