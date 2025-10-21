@@ -1,0 +1,8 @@
+print(60>70)
+print(60>=70)
+print(60<70)
+print(60<=70)
+print(60!=70)
+print(60==70)
+print("sami"=="sami")
+print("sami"!="sami")
