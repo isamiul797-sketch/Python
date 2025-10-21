@@ -50,3 +50,17 @@ elif mark >= 33:
 
 else:
     print("F")
+
+#Inner or nested if
+
+num1 = 899
+num2 = 798
+num3 = 988
+
+if num1 > num2:
+    if num1 > num3:
+        print(num1)
+    else :
+        print(num3)
+else :
+    print(num2)
