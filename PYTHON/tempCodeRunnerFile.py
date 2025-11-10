@@ -1,4 +1,1 @@
-num.sort()
-# print(num)
-# num.reverse()
-# print(num)
+1-i
