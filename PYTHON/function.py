@@ -17,3 +17,28 @@ add(20,80)
 sub(190,40)
 addition(21,70,90)
 message()
+
+#Returning value from function
+
+def sqr(a,b):
+    result = a * b
+    return result
+
+result = sqr(20,10)
+print("Result Is = ",result)
+
+def sqr(a,b):
+    result = a * b
+    return result
+
+result = sqr(20,10)
+print("Result Is = ",result)
+
+def large(a,b):
+    if a > b :
+        return a
+    else :
+        return b
+
+
+print("Large Number Is = ",large(20,100))
